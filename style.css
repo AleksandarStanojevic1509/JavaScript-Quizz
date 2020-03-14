@@ -1,0 +1,55 @@
+*{
+    font-family: 'Baloo Chettan 2', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: #f7df1e;
+    color: #323330;
+    font-size: 3em;
+    padding: 2% 0;
+    text-align: center;
+}
+h2{
+    background-color: #323330;
+    color: #f7df1e;
+    padding: 2% 0;
+    text-align: center;
+}
+#questions{
+    width: 100%;
+}
+.quest-answ{
+    margin: 2% 10% 0 10%;
+    background-color: #f7df1e96;
+    padding: 2%;
+    border: 2px solid #323330;
+    border-radius: 20px;
+}
+.quest-answ p{
+ font-size: 120%;
+}
+.answer{
+    padding: 1% 0 0 2%;
+}
+.answer label{
+    padding-left: 2%;
+}
+#btn{
+    text-align: center;
+}
+button{
+    background-color: #f7df1e96;
+    margin: 2%;
+    padding: 0 1%;
+    font-size: 20px;
+    border: 1px solid #323330;
+    border-radius: 10px;
+}
+button:hover{
+    color: #f7df1e;
+    border: 1px solid #f7df1e;
+    background-color:  #323330 ;
+}
