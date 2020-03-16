@@ -17,24 +17,456 @@
     </div>
 
     <div id="result">
-        <h2>Congratulations !!! You score 100% !!! You realy know JS !!!</h2>
+      <h2>
+        Congratulations !!! You score
+        <span style="text-decoration: underline; font-size: larger;">100%</span>
+        !!! You realy know JS !!!
+      </h2>
     </div>
 
     <div id="questions">
-
+      <!-- 01 -->
       <div class="quest-answ">
         <div class="single-question">
-            <p>Inside which HTML element do we put the JavaScript?</p>
+          <p>Which kind of operator is the = operator?</p>
         </div>
         <div class="answer">
-          <input type="radio" name="q1" id="" value="A" checked/><label for="">scripting</label> <br>
-          <input type="radio" name="q1" id="" value="B"/><label for=""></label> <br>
-          <input type="radio" name="q1" id="" value="C"/><label for=""></label> <br>
-          <input type="radio" name="q1" id="" value="D"/><label for=""></label>
+          <div>
+            <input type="radio" name="q1" id="" value="A" checked />
+            <label for=""
+              >It's a comparison operator (checks for equality).</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="q1" id="" value="B" />
+            <label for=""
+              >It's an arithmetic operator (combines two numbers).</label
+            >
+          </div>
+          <div class="correct">
+            <input type="radio" name="q1" id="" value="C" />
+            <label for="">It's an assignment operator (assigns a value).</label>
+          </div>
         </div>
       </div>
-      <div id="btn"> 
-          <button>Check Answers</button>
+
+      <!-- 02 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>Where do "data types" come into play?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q2" id="" value="A" checked />
+            <label for="">Data you work with in your code is of different type - e.g. numbers, text etc.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q2" id="" value="B" />
+            <label for="">Variables are assigned a type of data when they are declared (e.g. let age= number).</label>
+          </div>
+          <div>
+            <input type="radio" name="q2" id="" value="C" />
+            <label for="">There is no such thing as "types of data".</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's a "Function"?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q3" id="" value="A" checked />
+            <label for=""
+              >A function defines code on demand which executes right away when
+              the function is defined. You can then also call the function
+              thereafter.
+            </label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q3" id="" value="B" />
+            <label for=""
+              >A function defines code which doesn't execute right away but
+              which can be executed multiple times by calling the
+              function.</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="q3" id="" value="C" />
+            <label for=""
+              >A function is an alternative to a variable, it can store more
+              complex data and is not restricted to numbers or strings.</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>Which kind of variables live in the "local scope"?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q4" id="" value="A" checked />
+            <label for="">Variables declared outside of functions.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q4" id="" value="B" />
+            <label for="">Variables declared inside of functions.</label>
+          </div>
+          <div>
+            <input type="radio" name="q4" id="" value="C" />
+            <label for="">Variables declared inside of your script.</label>
+          </div>
+        </div>
+      </div>
+
+
+
+       <!-- 05 -->
+       <div class="quest-answ">
+        <div class="single-question">
+          <p>What's a "shadowed variable"?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q5" id="" value="A" checked />
+            <label for="">All variables declared in functions are "shadowed variables".</label>
+          </div>
+          <div>
+            <input type="radio" name="q5" id="" value="B" />
+            <label for="">All local variables are "shadowed variables".</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q5" id="" value="C" />
+            <label for="">A local variable, declared in a function, that also exists as a global variable.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's an "Array"?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q6" id="" value="A" checked />
+            <label for="">A list of numbers.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q6" id="" value="B" />
+            <label for="">A list of data of any kind.</label>
+          </div>
+          <div>
+            <input type="radio" name="q6" id="" value="C" />
+            <label for=""
+              >A collection of grouped data, structured as arbitrary key value
+              pairs.
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 07 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's an "Object"?</p>
+        </div>
+        <div class="answer">
+          <div class="correct">
+            <input type="radio" name="q7" id="" value="A" checked />
+            <label for="">Grouped data, structured in key-value pairs.</label>
+          </div>
+          <div>
+            <input type="radio" name="q7" id="" value="B" />
+            <label for="">Grouped data, where numbers can be mapped to arrays.</label>
+          </div>
+          <div>
+            <input type="radio" name="q7" id="" value="C" />
+            <label for="">Grouped data, where each element is identified by a zero-based index.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 08 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>When do you get NaN as a result?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q8" id="" value="A" checked />
+            <label for="">When using a variable that hasn't been defined yet (e.g. alert(someUndefinedVar)).</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q8" id="" value="B" />
+            <label for="">When running a mathematical calculation with invalid inputs (e.g. mixing numbers and text that can't be converted to a number).</label>
+          </div>
+          <div>
+            <input type="radio" name="q8" id="" value="C" />
+            <label for="">When running a mathematical calculation that yields a negative number in all cases.</label>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 09 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>How many block of an if-else if-else statement can be executed?</p>
+        </div>
+        <div class="answer">
+          <div class="correct">
+            <input type="radio" name="q9" id="" value="A" checked />
+            <label for="">Only one (or none, if no condition is met and no else block exists).</label>
+          </div>
+          <div>
+            <input type="radio" name="q9" id="" value="B" />
+            <label for="">All where the condition is met.</label>
+          </div>
+          <div>
+            <input type="radio" name="q9" id="" value="C" />
+            <label for="">Always the else block.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's the main difference between for-of and for-in loops?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q10" id="" value="A" checked />
+            <label for="">for-of loops can be replaced with while loops.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q10" id="" value="B" />
+            <label for="">for-of loops are used for arrays, for-in loops for objects.</label>
+          </div>
+          <div>
+            <input type="radio" name="q10" id="" value="C" />
+            <label for="">for-of loops work for strings and arrays.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's the most important difference between <b>var</b> and <b>let</b> / <b>const</b> ??</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q11" id="" value="A" checked />
+            <label for=""><b>var</b> creates variables, <b>let</b> and <b>const</b> create constants.</label>
+          </div>
+          <div>
+            <input type="radio" name="q11" id="" value="B" />
+            <label for=""><b>var</b> doesn't work anymore in modern JavaScript versions.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q11" id="" value="C" />
+            <label for=""><b>var</b> has global/function (local) scope, <b>let</b> and <b>const</b>  have block scope.</label>
+          </div>
+        </div>
+      </div> 
+
+      <!-- 12 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's the difference between a function declaration and function expression?</p>
+        </div>
+        <div class="answer">
+          <div class="correct">
+            <input type="radio" name="q12" id="" value="A" checked />
+            <label for="">Function expressions produce a value (a function object) which needs to be stored somewhere manually.</label>
+          </div>
+          <div>
+            <input type="radio" name="q12" id="" value="B" />
+            <label for="">Function expressions are exactly the same as function declarations.</label>
+          </div>
+          <div>
+            <input type="radio" name="q12" id="" value="C" />
+            <label for="">Function expressions can be used inside of other functions.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's an advantage of arrow functions?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q13" id="" value="A" checked />
+            <label for="">Way better performance than "normal" functions.</label>
+          </div>
+          <div>
+            <input type="radio" name="q13" id="" value="B" />
+            <label for="">Works in older versions of JavaScript as well.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="13" id="" value="C" />
+            <label for="">Much shorter syntax.</label>
+          </div>
+        </div>
+      </div> 
+
+      <!-- 14 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's an anonymous function?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q14" id="" value="A" checked />
+            <label for="">A function that takes no parameters.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q14" id="" value="B" />
+            <label for="">A function without a name assigned.</label>
+          </div>
+          <div>
+            <input type="radio" name="q14" id="" value="C" />
+            <label for="">A function that returns no values.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's a difference between <u>document.querySelector('#someId')</u> and <u>document.getElementById('someId')</u>?</p>
+        </div>
+        <div class="answer">
+          <div class="correct">
+            <input type="radio" name="q15" id="" value="A" checked />
+            <label for=""><b>querySelector</b> selects ALL elements with an ID of <u>someId</u>.</label>
+          </div>
+          <div>
+            <input type="radio" name="q15" id="" value="B" />
+            <label for=""><b>querySelector</b> in the given example actually select the first element with a CSS class of <u>someId</u>.</label>
+          </div>
+          <div>
+            <input type="radio" name="q15" id="" value="C" />
+            <label for=""><b>querySelector</b> uses a CSS selector and can match ANY elements (depending on provided selector), <b>getElementById</b> looks only for the ID.</label>
+          </div>
+        </div>
+      </div> 
+      
+      <!-- 16 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's the difference between <u>querySelector()</u> and <u>querySelectorAll()</u>?</p>
+        </div>
+        <div class="answer">
+          <div class="correct">
+            <input type="radio" name="q16" id="" value="A" checked />
+            <label for=""><b>querySelector</b> finds the first matching element, <b>querySelectorAll</b> finds all matching elements (and hence returns an array-like object).</label>
+          </div>
+          <div>
+            <input type="radio" name="q16" id="" value="B" />
+            <label for="">Both return array-like objects but <b>querySelector</b>'s array holds only the first matching element (or no elements at all).</label>
+          </div>
+          <div>
+            <input type="radio" name="q16" id="" value="C" />
+            <label for=""><b>querySelectorAll</b> works with all kinds of CSS selectors, <b>querySelector</b> only supports selecting by ID.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's the purpose of inheritance?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q17" id="" value="A" checked />
+            <label for="">Classes can define more methods than they normally can.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q17" id="" value="B" />
+            <label for="">Classes can be based on other classes and hence share functionality.</label>
+          </div>
+          <div>
+            <input type="radio" name="q17" id="" value="C" />
+            <label for="">Objects can be created based on primitive values by inheriting from those primitive values.</label>
+          </div>
+        </div>
+      </div> 
+      
+      <!-- 18 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's the purpose of a Class??</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q18" id="" value="A" checked />
+            <label for="">Classes are JavaScript objects.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q18" id="" value="B" />
+            <label for="">Classes are blueprints for JavaScript objects.</label>
+          </div>
+          <div>
+            <input type="radio" name="18" id="" value="C" />
+            <label for="">Classes are blueprints for JavaScript functions.</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 19 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>Is the concept of "Events" exclusive to JavaScript?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q19" id="" value="A" checked />
+            <label for="">Yes.</label>
+          </div>
+          <div>
+            <input type="radio" name="q19" id="" value="B" />
+            <label for="">No - it also exists in NodeJS but not in other programming languages</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q19" id="" value="C" />
+            <label for="">No.</label>
+          </div>
+        </div>
+      </div> 
+      
+      <!-- 20 -->
+      <div class="quest-answ">
+        <div class="single-question">
+          <p>What's the difference between <b>someEvent.preventDefault()</b> and <b>someEvent.stopPropagation()</b>?</p>
+        </div>
+        <div class="answer">
+          <div>
+            <input type="radio" name="q20" id="" value="A" checked />
+            <label for="">Both methods do the same thing.</label>
+          </div>
+          <div>
+            <input type="radio" name="q20" id="" value="B" />
+            <label for=""><u>preventDefault()</u> stops the browser from going ahead and cancels the script execution, <u>stopPropagation()</u> ensures that no other event handlers (on different elements) can handle the same event.</label>
+          </div>
+          <div class="correct">
+            <input type="radio" name="q20" id="" value="C" />
+            <label for=""><u>preventDefault()</u> stops the browser from going ahead with its default behavior, <u>stopPropagation()</u> ensures that no other event handlers (on different elements) can handle the same event.</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="btn">
+        <button>checkAnswers</button>
       </div>
     </div>
 
