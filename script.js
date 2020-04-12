@@ -85,11 +85,6 @@ btn.addEventListener("click", () => {
 
   result.setAttribute("style", "display:block");
 
-  printScore.innerHTML = `
-  Congratulations !!! You score
-  <span style="text-decoration: underline; font-size: larger;">${score}%</span>
-  !!! You realy know JS !!!`
-  console.log(score)
 
   let count = 0;
 
